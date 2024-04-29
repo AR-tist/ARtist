@@ -1,0 +1,6 @@
+{
+    'ip' : 'db.ar-tist.kro.kr.container'
+    'port' : '80'
+    'user_name' : 'artist'
+    'password' : 'artist1234'
+}

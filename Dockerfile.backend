@@ -1,0 +1,15 @@
+FROM tiangolo/uvicorn-gunicorn:python3.11
+
+COPY ./python/ /python
+
+WORKDIR /python/
+
+RUN pip install -r ./requirements.txt --no-cache-dir
+
+EXPOSE 80
+
+WORKDIR /python/source
+
+RUN mkdir -p /data
+
+CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "80"]

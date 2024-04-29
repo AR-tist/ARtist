@@ -1,0 +1,70 @@
+services:
+  nginx:
+    build: 
+      context: .
+      dockerfile: Dockerfile.frontend
+    restart: always
+    networks:
+      artist-network:
+        aliases:
+          - ar-tist.kro.kr.container
+
+    ports:
+      - 8080:80
+
+    container_name: ar-tist_nginx
+    stdin_open: true
+    tty: true
+  
+  mongodb:
+    image: mongo
+    restart: always
+    container_name: ar-tist_mongodb
+    volumes:
+      - ${PWD}/data/mongodb:/data/db
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=artist
+      - MONGO_INITDB_ROOT_PASSWORD=artist1234
+      - MONGO_INITDB_DATABASE=artist
+    networks:
+      artist-network:
+        aliases:
+          - db.ar-tist.kro.kr.container
+
+  mongo-express:
+    image: mongo-express
+    restart: always
+    container_name: ar-tist_mongodb_express
+    environment:
+      ME_CONFIG_BASICAUTH_USERNAME: artist
+      ME_CONFIG_BASICAUTH_PASSWORD: artist1234
+      ME_CONFIG_MONGODB_URL: mongodb://artist:artist1234@db.ar-tist.kro.kr.container:27017
+      PORT: 80
+      VCAP_APP_HOST: express.ar-tist.kro.kr.container
+
+    networks:
+      artist-network:
+        aliases:
+          - express.ar-tist.kro.kr.container
+
+  fastapi:
+    build: 
+      context: .
+      dockerfile: Dockerfile.backend
+    restart: always
+    container_name: artist_fastapi
+    volumes:
+      - ${PWD}/data/fastapi:/data
+
+    networks:
+      artist-network:
+        aliases:
+          - server.ar-tist.kro.kr.container
+
+networks:
+  artist-network:
+    # external: true
+    name: artist-network
+    driver: bridge
+    ipam:
+      driver: default
