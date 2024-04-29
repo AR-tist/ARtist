@@ -1,6 +1,6 @@
 # ARtist: Open Online Piano Platform Using MP3 To MIDI And AR Piano
 
-<img width="1148" alt="image" src="https://github.com/AR-tist/ARtist/assets/interface.png">
+<img width="1148" alt="image" src="https://raw.githubusercontent.com/AR-tist/ARtist/main/assets/interface.png">
 
 ARtist is a platform where you can share and play sheet music played by different users online.
 
@@ -15,7 +15,7 @@ You can create a room, invite other users, play together at the same time, and p
 - Implementing real-time multiplayer and server frameworks with Websocket, Fastapi, and Mongo
 - Implementing AR Piano with MediaPipe
 
-<img width="1148" alt="image" src="https://github.com/AR-tist/ARtist/assets/architecture.png">
+<img width="1148" alt="image" src="https://raw.githubusercontent.com/AR-tist/ARtist/main/assets/architecture.png">
 
 ### Getting Started
 
