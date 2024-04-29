@@ -1,16 +1,16 @@
-import NotePlayPage from "./pages/NotePlay/NotePlayPage.js";
+import NotePlayPage from "./pages/NotePlay/NotePlayPage";
 import MidiListPage from "./pages/MidiList/MidiListPage.js";
-import MidiPlayPage from "./pages/MidiPlay/MidiPlayPage.js";
-import NoteGraphicPage from "./pages/NoteGraphic/NoteGraphicPage.js";
+import MidiPlayPage from "./pages/MidiPlay/MidiPlayPage";
+import NoteGraphicPage from "./pages/NoteGraphic/NoteGraphicPage";
 import { Routes, Route } from "react-router-dom";
-import ConvertPage from "./pages/Convert/ConvertPage.js";
+import ConvertPage from "./pages/Convert/ConvertPage";
 
 import { useSelector } from "react-redux";
-import Loading from "./components/loading/loading.js";
-import PianoWSPage from "./pages/PianoWSPage.js";
-import Room from "./pages/Room/RoomPage.js";
-import EquipmentChangePage from "./pages/Equipment/EquipmentChangePage.js";
-import WholeSong from "./components/WholeSong.js";
+import Loading from "./components/loading/loading";
+import PianoWSPage from "./pages/PianoWSPage";
+import Room from "./pages/Room/RoomPage";
+import EquipmentChangePage from "./pages/Equipment/EquipmentChangePage";
+import WholeSong from "./components/WholeSong";
 import DevPage from "./pages/Dev/DevPage.js";
 import EditorPick1Page from "./pages/EditorPick/EditorPick1Page.js";
 import EditorPick2Page from "./pages/EditorPick/EditorPick2Page.js";

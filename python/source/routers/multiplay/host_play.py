@@ -1,5 +1,5 @@
 import time
-
+import os
 from pymongo import MongoClient
 
 async def hostPlay(event, connected_clients, rooms):
@@ -11,8 +11,8 @@ async def hostPlay(event, connected_clients, rooms):
         await connected_clients[guest].send_text(
             str({'type': 'areYouReady', 'data': {}}).replace("'", '"')
         )
-    client = MongoClient('mongodb://artist:artist1234@db.ar-tist.kro.kr.container:27017/')
-    db = client['artist']
+    client = MongoClient(f'mongodb://{os.environ["MONGO_ROOT_USERNAME"]}:{os.environ["MONGO_ROOT_PASSWORD"]}@db.ar-tist.kro.kr.container:27017/')
+    db = client[os.environ["MONGO_DB_NAME"]]
     collection = db['MidiFile']
 
     # increment 1 to play_count field

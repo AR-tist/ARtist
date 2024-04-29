@@ -3,6 +3,7 @@ FROM node:14-alpine as build
 WORKDIR /app
 
 COPY ./frontend/react ./
+COPY ./.env ./
 
 RUN npm install
 

@@ -1,8 +1,9 @@
 from pymongo import MongoClient
+import os
 
 def get_midi( filename ):
-    client = MongoClient('mongodb://artist:artist1234@db.ar-tist.kro.kr.container:27017/')
-    db = client['artist']
+    client = MongoClient(f'mongodb://{os.environ["MONGO_ROOT_USERNAME"]}:{os.environ["MONGO_ROOT_PASSWORD"]}@db.ar-tist.kro.kr.container:27017/')
+    db = client[os.environ["MONGO_DB_NAME"]]
     collection = db['MidiFile']
 
     # find one document in collection by filename

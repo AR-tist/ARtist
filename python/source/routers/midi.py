@@ -14,8 +14,8 @@ router = APIRouter(
     tags=["midi"]
 )
 
-client = MongoClient('mongodb://artist:artist1234@db.ar-tist.kro.kr.container:27017/')
-db = client['artist']
+client = MongoClient(f'mongodb://{os.environ["MONGO_ROOT_USERNAME"]}:{os.environ["MONGO_ROOT_PASSWORD"]}@db.ar-tist.kro.kr.container:27017/')
+db = client[os.environ["MONGO_DB_NAME"]]
 collection = db['MidiFile']
 
 upload_path = '/data'

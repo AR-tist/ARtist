@@ -10,7 +10,7 @@ services:
           - ar-tist.kro.kr.container
 
     ports:
-      - 8080:80
+      - ${NGINX_PORT}:80
 
     container_name: ar-tist_nginx
     stdin_open: true
@@ -23,9 +23,9 @@ services:
     volumes:
       - ${PWD}/data/mongodb:/data/db
     environment:
-      - MONGO_INITDB_ROOT_USERNAME=artist
-      - MONGO_INITDB_ROOT_PASSWORD=artist1234
-      - MONGO_INITDB_DATABASE=artist
+      - MONGO_INITDB_ROOT_USERNAME=${MONGO_ROOT_USERNAME}
+      - MONGO_INITDB_ROOT_PASSWORD=${MONGO_ROOT_PASSWORD}
+      - MONGO_INITDB_DATABASE=${MONGO_DB_NAME}
     networks:
       artist-network:
         aliases:
@@ -36,11 +36,14 @@ services:
     restart: always
     container_name: ar-tist_mongodb_express
     environment:
-      ME_CONFIG_BASICAUTH_USERNAME: artist
-      ME_CONFIG_BASICAUTH_PASSWORD: artist1234
-      ME_CONFIG_MONGODB_URL: mongodb://artist:artist1234@db.ar-tist.kro.kr.container:27017
+      ME_CONFIG_BASICAUTH_USERNAME: ${MONGO_ROOT_USERNAME}
+      ME_CONFIG_BASICAUTH_PASSWORD: ${MONGO_ROOT_PASSWORD}
+      ME_CONFIG_MONGODB_URL: mongodb://${MONGO_ROOT_USERNAME}:${MONGO_ROOT_PASSWORD}@db.ar-tist.kro.kr.container:27017
       PORT: 80
       VCAP_APP_HOST: express.ar-tist.kro.kr.container
+
+    ports:
+      - ${EXPRESS_PORT}:80
 
     networks:
       artist-network:
@@ -55,9 +58,12 @@ services:
     container_name: artist_fastapi
     volumes:
       - ${PWD}/data/fastapi:/data
+    
+    env_file:
+      - .env
 
     ports:
-      - 8090:80
+      - ${FASTAPI_PORT}:80
     networks:
       artist-network:
         aliases:
