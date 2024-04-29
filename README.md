@@ -17,7 +17,7 @@ You can create a room, invite other users, play together at the same time, and p
 
 <img width="1148" alt="image" src="https://raw.githubusercontent.com/AR-tist/ARtist/main/assets/architecture.png">
 
-### Getting Started
+## Getting Started
 
 We provide a Docker Compose and DockerFile. thus, If you have Docker daemon, you can use direct our framework.
 
@@ -31,7 +31,7 @@ After clone our repository, Just run docker compose
 docker compose up -d
 ```
 
-### Our Containers
+## Our Containers
 
 Our framework consists of four containers, each with a webserver and API, Websocket, and DB server.
 
