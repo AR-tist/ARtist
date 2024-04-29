@@ -5,7 +5,7 @@ from routers import midi, root, websocket
 from fastapi.middleware.cors import CORSMiddleware
 
 ### FastAPI ###
-app = FastAPI()
+app = FastAPI(docs_url='/api/docs', openapi_url='/api/openapi.json')
 app.include_router(root.router)
 app.include_router(midi.router)
 app.include_router(websocket.router)
