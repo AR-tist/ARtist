@@ -35,7 +35,7 @@ docker compose up -d
 
 Our framework consists of four containers, each with a webserver and API, Websocket, and DB server.
 
-- Nginx `nginx:latest`
+- Nginx `nginx:latest` + Node `node:14-alpine`
 - FastAPI `tiangolo/uvicorn-gunicorn:python3.11` + `install requirements.txt`
 - Mongodb `mongo:latest`
 - Mongo-express `mongo-express:latest`
