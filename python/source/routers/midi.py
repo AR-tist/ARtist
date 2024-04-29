@@ -10,7 +10,7 @@ from PIL import Image
 import pretty_midi
 
 router = APIRouter(
-    prefix="/midi",
+    prefix="/api/midi",
     tags=["midi"]
 )
 

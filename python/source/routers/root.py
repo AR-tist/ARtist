@@ -1,7 +1,7 @@
 from fastapi import APIRouter
 
 router = APIRouter(
-	prefix="",
+	prefix="/api",
     tags=["root"]
 )
 

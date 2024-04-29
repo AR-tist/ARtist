@@ -13,7 +13,7 @@ import time
 import traceback
 
 router = APIRouter(
-	prefix="/ws",
+	prefix="/api/ws",
     tags=["websocket"]
 )
 
