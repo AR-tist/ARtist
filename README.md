@@ -31,6 +31,8 @@ After clone our repository, Just run docker compose
 docker compose up -d
 ```
 
+While the Dockerfile is building, Npm will automatically install the packages, build React, and hand over the static files to Nginx.
+
 ## Our Containers
 
 Our framework consists of four containers, each with a webserver and API, Websocket, and DB server.
