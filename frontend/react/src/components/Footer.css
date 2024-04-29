@@ -1,0 +1,70 @@
+footer .policy_area li:first-child {
+  padding-left: 0;
+}
+
+footer .policy_area li {
+  position: relative;
+  display: inline-block;
+  padding: 0 8px;
+}
+
+footer .policy_area ul {
+  font-size: 0;
+}
+
+footer .policy_area li a {
+  font-size: 12px;
+  color: #8e8e93;
+}
+
+footer address {
+  padding-top: 16px;
+  overflow: hidden;
+}
+address {
+  display: block;
+  font-style: italic;
+}
+
+footer address .address_bottom {
+  margin-top: 4px;
+}
+
+footer address span {
+  position: relative;
+  display: inline-block;
+  padding-right: 7px;
+  padding-left: 8px;
+  font-size: 11px;
+  font-style: normal;
+  color: #bcbcc0;
+}
+
+address,
+body,
+button,
+dd,
+div,
+dl,
+dt,
+em,
+fieldset,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+html,
+li,
+ol,
+p,
+span,
+td,
+th,
+ul {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}

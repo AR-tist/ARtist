@@ -1,0 +1,32 @@
+h3 {
+  color: black;
+}
+
+.play-button {
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+}
+.download-button {
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+}
+.delete-button {
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+}
+
+.play-img {
+  width: 20px;
+  height: 25px;
+}
+.download-img {
+  width: 20px;
+  height: 20px;
+}
+.delete-img {
+  width: 20px;
+  height: 20px;
+}

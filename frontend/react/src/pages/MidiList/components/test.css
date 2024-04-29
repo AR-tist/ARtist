@@ -1,0 +1,374 @@
+/* Rectangle 84 */
+
+position: absolute;
+width: 573px;
+height: 744px;
+left: 438px;
+top: 323px;
+
+background: #FFFFFF;
+border-radius: 11px;
+
+
+/* 새로운 곡 업로드하기 */
+
+position: absolute;
+width: 381px;
+height: 37px;
+left: 480px;
+top: 374px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 30px;
+line-height: 36px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* x */
+
+position: absolute;
+width: 51px;
+height: 34px;
+left: 982px;
+top: 341px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 100;
+font-size: 30px;
+line-height: 36px;
+
+color: #000000;
+
+
+
+/* Group 26 */
+
+position: absolute;
+width: 474px;
+height: 63px;
+left: 492px;
+top: 741px;
+
+
+
+/* 업로드 곡 이름 */
+
+position: absolute;
+width: 95px;
+height: 11px;
+left: 492px;
+top: 741px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 17px;
+
+color: #393939;
+
+
+
+/* Line 19 */
+
+position: absolute;
+width: 472px;
+height: 0px;
+left: 494px;
+top: 804px;
+
+border: 1px solid #000000;
+
+
+/* Group 49 */
+
+position: absolute;
+width: 222px;
+height: 241.42px;
+left: 485px;
+top: 454px;
+
+
+
+/* Group 24 */
+
+position: absolute;
+width: 219px;
+height: 212.42px;
+left: 488px;
+top: 483px;
+
+
+
+/* Rectangle 67 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 219px;
+height: 212.42px;
+left: 488px;
+top: 483px;
+
+background: rgba(231, 232, 255, 0.25);
+border: 1px dashed rgba(97, 99, 128, 0.8);
+border-radius: 10px;
+
+
+/* + */
+
+position: absolute;
+width: 16.29px;
+height: 21.33px;
+left: 590.43px;
+top: 558.14px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 50px;
+line-height: 61px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #E7E8FF;
+
+
+
+/* 이미지 (아이콘) */
+
+position: absolute;
+width: 89.57px;
+height: 36px;
+left: 552.71px;
+top: 631.78px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 18px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #505050;
+
+
+
+/* 앨범 이미지 */
+
+position: absolute;
+width: 95px;
+height: 11px;
+left: 485px;
+top: 454px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 17px;
+
+color: #393939;
+
+
+
+/* Group 50 */
+
+position: absolute;
+width: 219px;
+height: 241.42px;
+left: 740px;
+top: 456px;
+
+
+
+/* Group 29 */
+
+position: absolute;
+width: 219px;
+height: 212.42px;
+left: 740px;
+top: 485px;
+
+
+
+/* Rectangle 67 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 219px;
+height: 212.42px;
+left: 740px;
+top: 485px;
+
+background: rgba(231, 232, 255, 0.25);
+border: 1px dashed rgba(97, 99, 128, 0.8);
+border-radius: 10px;
+
+
+/* + */
+
+position: absolute;
+width: 16.29px;
+height: 21.33px;
+left: 842.43px;
+top: 560.14px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 50px;
+line-height: 61px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #E7E8FF;
+
+
+
+/* MP3 파일 또는 MIDI 파일 */
+
+position: absolute;
+width: 89.57px;
+height: 36px;
+left: 804.71px;
+top: 633.78px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 18px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #505050;
+
+
+
+/* 음원 파일 */
+
+position: absolute;
+width: 95px;
+height: 11px;
+left: 742px;
+top: 456px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 17px;
+
+color: #393939;
+
+
+
+/* Group 27 */
+
+position: absolute;
+width: 474px;
+height: 63px;
+left: 490px;
+top: 843px;
+
+
+
+/* 비밀번호 */
+
+position: absolute;
+width: 95px;
+height: 11px;
+left: 490px;
+top: 843px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 17px;
+
+color: #393939;
+
+
+
+/* Line 21 */
+
+position: absolute;
+width: 472px;
+height: 0px;
+left: 492px;
+top: 906px;
+
+border: 1px solid #000000;
+
+
+/* **** */
+
+position: absolute;
+width: 84px;
+height: 27px;
+left: 495px;
+top: 875px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 24px;
+
+color: #000000;
+
+
+
+/* Group 28 */
+
+position: absolute;
+width: 124px;
+height: 38px;
+left: 662px;
+top: 960px;
+
+
+
+/* Rectangle 85 */
+
+position: absolute;
+width: 124px;
+height: 38px;
+left: 662px;
+top: 960px;
+
+background: #7331FF;
+border-radius: 10px;
+
+
+/* 완료 */
+
+position: absolute;
+width: 70px;
+height: 21px;
+left: 689px;
+top: 969px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 15px;
+line-height: 18px;
+text-align: center;
+
+color: #FFFFFF;
+
