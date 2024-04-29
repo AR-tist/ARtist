@@ -1,10 +1,10 @@
 import React from "react";
 import { useSelector } from "react-redux";
-import Header from "./Header";
-import Footer from "./Footer";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 
-import Layout from "./Layout";
-import MusicList from "./MusicList";
+import Layout from "../components/Layout";
+import MusicList from "../components/MusicList";
 
 const WholeSong = () => {
   const nickname = useSelector((state) => state.user.name);

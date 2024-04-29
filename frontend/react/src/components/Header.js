@@ -3,7 +3,7 @@ import UploadPopup from "./UploadPopup.js";
 import { useNavigate } from "react-router-dom";
 import cookie from "react-cookies";
 import { useSelector, useDispatch } from "react-redux";
-import { setNickname, setClient } from "../store/slices/user/userAction.js";
+import { setNickname, setClient } from "../store/slices/user/userAction";
 
 const Header = () => {
   const dispatch = useDispatch();

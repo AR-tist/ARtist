@@ -6,15 +6,15 @@ import { useSelector, useDispatch } from "react-redux";
 import { useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { setLoading } from "../../store/slices/midi/midiAction";
-import axiosInstance from "../../utils/axios";
-import { fileToMidi } from "../../utils/Utils";
-import { setMidi } from "../../store/slices/midi/midiAction";
+import axiosInstance from "./../../utils/axios";
+import { fileToMidi } from "./../../utils/Utils";
+import { setMidi } from "./../../store/slices/midi/midiAction";
 import { setOngoingFalse } from "../../store/slices/room/roomAction";
 import Modal from "react-modal";
 import axios from "axios";
 import { getIsLike, postLike } from "../../utils/api/room_RESTapi";
 import cookie from "react-cookies";
-import { setPlayMode, setTempo } from '../../store/slices/user/userAction';
+import { setPlayMode, setTempo } from './../../store/slices/user/userAction';
 import { random_images } from "../../components/MusicList";
 
 const Room = () => {

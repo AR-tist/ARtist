@@ -21,7 +21,7 @@ COPY ./frontend/nginx/sites-enabled /etc/nginx/sites-enabled/
 
 RUN rm -rf /etc/nginx/conf.d/
 
-COPY ./frontend/nginx/conf.d/ /etc/nginx/conf.d/
+RUN mkdir /etc/nginx/conf.d/
 
 RUN chmod -R 777 /home/build
 
