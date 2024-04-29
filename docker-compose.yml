@@ -9,8 +9,8 @@ services:
         aliases:
           - ar-tist.kro.kr.container
 
-    # ports:
-      # - ${NGINX_PORT}:80
+    ports:
+      - ${NGINX_PORT}:80
 
     container_name: ar-tist_nginx
     stdin_open: true
@@ -42,8 +42,8 @@ services:
       PORT: 80
       VCAP_APP_HOST: express.ar-tist.kro.kr.container
 
-    # ports:
-      # - ${EXPRESS_PORT}:80
+    ports:
+      - ${EXPRESS_PORT}:80
 
     networks:
       artist-network:
@@ -62,8 +62,8 @@ services:
     env_file:
       - .env
 
-    # ports:
-    #   - ${FASTAPI_PORT}:80
+    ports:
+      - ${FASTAPI_PORT}:80
     networks:
       artist-network:
         aliases:
