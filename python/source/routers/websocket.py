@@ -2,6 +2,7 @@ from fastapi import APIRouter, WebSocket
 import uuid
 import logging
 import json
+import os
 
 from .multiplay.host_play import hostPlay
 from .multiplay.imready import imready
@@ -13,7 +14,7 @@ import time
 import traceback
 
 router = APIRouter(
-	prefix="/api/ws",
+	prefix=f"/{os.environ['FASTAPI_BASE_PATH']}/ws",
     tags=["websocket"]
 )
 

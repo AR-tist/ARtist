@@ -1,7 +1,8 @@
 from fastapi import APIRouter
+import os
 
 router = APIRouter(
-	prefix="/api",
+	prefix=f"/{os.environ['FASTAPI_BASE_PATH']}",
     tags=["root"]
 )
 

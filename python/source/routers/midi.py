@@ -10,7 +10,7 @@ from PIL import Image
 import pretty_midi
 
 router = APIRouter(
-    prefix="/api/midi",
+    prefix=f"/{os.environ['FASTAPI_BASE_PATH']}/midi",
     tags=["midi"]
 )
 
