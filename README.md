@@ -42,6 +42,7 @@ Our framework consists of four containers, each with a webserver and API, Websoc
 - Mongodb `mongo:latest`
 - Mongo-express `mongo-express:latest`
 
+For more detailed information, please refer to the [wiki section](https://github.com/AR-tist/ARtist/wiki).
 
 ## Team Members
 
