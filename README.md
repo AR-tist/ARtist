@@ -41,3 +41,14 @@ Our framework consists of four containers, each with a webserver and API, Websoc
 - FastAPI `tiangolo/uvicorn-gunicorn:python3.11` + `install requirements.txt`
 - Mongodb `mongo:latest`
 - Mongo-express `mongo-express:latest`
+
+
+## Team Members
+
+| Name              | Role                                   | Github                                | Email                      |
+| ----------------- | -------------------------------------- | ------------------------------------- | -------------------------- |
+| 김지원 (Kim Jiwon) | MIDI Note, Piano Interface             | [https://github.com/zincyan](https://github.com/zincyan)       | tstnet3629@gachon.ac.kr  |
+| 이아영 (Lee Ahyoung) | Design, Web Page                    |    [https://github.com/ah-o-ng12](https://github.com/ah-o-ng12)                                   | ahyoung12@gachon.ac.kr  |
+| 변상연 (Byeon Sangyeon) | Phone Communication, Multiplay         | [https://github.com/ideawolf](https://github.com/ideawolf)    | jiakang@gachon.ac.kr    |
+| 정민규 (Jeong Mingyu) | Multiplay, AR Input                  | [https://github.com/Jaezic](https://github.com/Jaezic)       | jkg7170@gachon.ac.kr    |
+| 이준엽 (Lee Joonyeob) | MP3 to MIDI file conversion, AR Input | [https://github.com/joonyeoblee](https://github.com/joonyeoblee) | donggak0617@gachon.ac.kr | 
